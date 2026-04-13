@@ -1,0 +1,178 @@
+[versions]
+java = "17"
+app-api = "0.1.0"
+ktor = "3.3.0"
+kotlin = "2.1.20"
+logback = "1.5.3"
+prometeus = "1.11.5"
+exposed = "0.47.0"
+ktorKoin = "4.1.0"
+koin = "4.1.0"
+firebase = "9.2.0"
+slf4j = "2.0.9"
+googleCloudBom = "26.30.0"
+mysqlConnector = "8.2.0"
+junitBom = "5.10.0"
+mockk = "1.14.4"
+mockitoKotlin = "5.4.0"
+mockitoInline = "5.2.0"
+johnrengelmanShadow = "8.1.1"
+gae = "2.5.0"
+googleLogback = "0.131.3-alpha"
+google-cloud-sql = "1.15.2"
+hikari = "5.1.0"
+h2 = "2.2.224"
+
+guava = "33.0.0-jre"
+
+kotlinx-serialization-json = "1.6.2"
+
+appStoreServer = "2.0.0"
+
+kotlinx-coroutines = "1.7.3"
+
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth", version.ref = "ktor" }
+ktor-server-authJwt = { module = "io.ktor:ktor-server-auth-jwt", version.ref = "ktor" }
+ktor-server-requestValidation = { module = "io.ktor:ktor-server-request-validation", version.ref = "ktor" }
+ktor-server-hostCommon = { module = "io.ktor:ktor-server-host-common", version.ref = "ktor" }
+ktor-server-statusPages = { module = "io.ktor:ktor-server-status-pages", version.ref = "ktor" }
+ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
+ktor-server-callLogging = { module = "io.ktor:ktor-server-call-logging", version.ref = "ktor" }
+ktor-server-callId = { module = "io.ktor:ktor-server-call-id", version.ref = "ktor" }
+ktor-server-metrics = { module = "io.ktor:ktor-server-metrics", version.ref = "ktor" }
+ktor-server-metricsMicrometer = { module = "io.ktor:ktor-server-metrics-micrometer", version.ref = "ktor" }
+ktor-server-contentNegotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-server-nettyJvm = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-serializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-server-thymeleaf = { module = "io.ktor:ktor-server-thymeleaf", version.ref = "ktor" }
+ktor-server-sessions = { module = "io.ktor:ktor-server-sessions", version.ref = "ktor" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-apache = { module = "io.ktor:ktor-client-apache", version.ref = "ktor" }
+ktor-client-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-okhttpJvm = { module = "io.ktor:ktor-client-okhttp-jvm", version.ref = "ktor" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+ktor-client-serializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-json = { module = "io.ktor:ktor-client-json", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+
+
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+micrometer-registryPrometheus = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "prometeus" }
+
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+
+firebase-admin = { module = "com.google.firebase:firebase-admin", version.ref = "firebase" }
+
+google-cloudBom = { module = "com.google.cloud:libraries-bom", version.ref = "googleCloudBom" }
+google-couldStorage = { module = "com.google.cloud:google-cloud-storage" }
+
+google-guava = { module = "com.google.guava:guava", version.ref = "guava" }
+
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+exposed-javaTime = { module = "org.jetbrains.exposed:exposed-java-time", version.ref = "exposed" }
+exposed-crypt = { module = "org.jetbrains.exposed:exposed-crypt", version.ref = "exposed" }
+
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "ktorKoin" }
+koin-loggerSlf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "ktorKoin" }
+
+mysql-connector = { module = "com.mysql:mysql-connector-j", version.ref = "mysqlConnector" }
+google-cloud-mysqlSocket = { module = "com.google.cloud.sql:mysql-socket-factory-connector-j-8", version.ref = "google-cloud-sql" }
+
+google-logback = { module = "com.google.cloud:google-cloud-logging-logback", version.ref = "googleLogback" }
+google-gaeGradlePlugin = { module = "com.google.cloud.tools:appengine-gradle-plugin", version.ref = "gae" }
+
+apple-store-server = { module = "com.apple.itunes.storekit:app-store-server-library", version.ref = "appStoreServer" }
+
+hilariCp = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
+h2-database = { module = "com.h2database:h2", version.ref = "h2" }
+
+# for test
+test-junitBom = { module = "org.junit:junit-bom", version.ref = "junitBom" }
+test-junitJupiter = { module = "org.junit.jupiter:junit-jupiter" }
+
+test-mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+test-mockitoKotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+test-mockitoInline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
+
+test-koin = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+test-koinTestJunit5 = { module = "io.insert-koin:koin-test-junit5", version.ref = "koin" }
+
+test-kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+
+
+[plugins]
+jetbrains-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+johnrengelman-shadow = { id = "com.github.johnrengelman.shadow", version.ref = "johnrengelmanShadow" }
+google-appengine = { id = "com.google.cloud.tools.appengine", version.ref = "gae" }
+
+
+[bundles]
+ktor-server = [
+    "ktor-server-core",
+    "ktor-server-auth",
+    "ktor-server-authJwt",
+    "ktor-server-requestValidation",
+    "ktor-server-hostCommon",
+    "ktor-server-statusPages",
+    "ktor-server-cors",
+    "ktor-server-callLogging",
+    "ktor-server-callId",
+    "ktor-server-metrics",
+    "ktor-server-metricsMicrometer",
+    "ktor-server-contentNegotiation",
+    "ktor-server-nettyJvm",
+    "ktor-serializationKotlinxJson",
+    "ktor-server-thymeleaf",
+    "ktor-server-sessions"
+]
+
+
+ktor-client = [
+    "ktor-client-core",
+    "ktor-client-contentNegotiation",
+    "ktor-client-apache"
+]
+
+
+exposed-impl = [
+    "exposed-core",
+    "exposed-dao",
+    "exposed-jdbc",
+    "exposed-crypt",
+    "exposed-javaTime"
+]
+
+koin-impl = [
+    "koin-ktor",
+    "koin-loggerSlf4j"
+]
+
+log-impl = [
+    "logback-classic",
+    "slf4j-api"
+]
+
+test-mockk = [
+    "test-mockk",
+    "test-mockitoInline",
+    "test-mockitoKotlin"
+]
+
+test-koin = [
+    "test-koin",
+    "test-koinTestJunit5"
+]
