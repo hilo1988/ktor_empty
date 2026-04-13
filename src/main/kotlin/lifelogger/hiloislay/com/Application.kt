@@ -1,4 +1,4 @@
-package com.hiloislay.ktorempty
+package lifelogger.hiloislay.com
 
 import io.ktor.server.application.*
 import io.ktor.server.engine.*

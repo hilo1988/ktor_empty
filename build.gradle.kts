@@ -5,10 +5,10 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version libs.versions.kotlin
 }
 
-group = "com.hiloislay.ktorempty"
+group = "com.hiloislay.lifelogger"
 version = "0.0.1"
 application {
-    mainClass.set("com.hiloislay.ktorempty.ApplicationKt")
+    mainClass.set("lifelogger.hiloislay.com.ApplicationKt")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
