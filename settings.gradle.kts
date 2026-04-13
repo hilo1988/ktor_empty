@@ -1,1 +1,1 @@
-rootProject.name = "life-logger"
+rootProject.name = "ktor-empty"
